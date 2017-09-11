@@ -10,3 +10,11 @@ c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS wit
 c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.exe
 c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.pdb
 c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\obj\Debug\Ambalama_HMS_with_MetroUI.Reception.resources
+C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\bin\Debug\Ambalama HMS with MetroUI.exe.config
+C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\bin\Debug\Ambalama HMS with MetroUI.exe
+C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\bin\Debug\Ambalama HMS with MetroUI.pdb
+C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\obj\Debug\Ambalama_HMS_with_MetroUI.Reception.resources
+C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\obj\Debug\Ambalama_HMS_with_MetroUI.Properties.Resources.resources
+C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.csproj.GenerateResource.Cache
+C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.exe
+C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.pdb

@@ -34,6 +34,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reception));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
@@ -127,7 +128,7 @@
             this.metroTabPage1.Controls.Add(this.metroLabel1);
             this.metroTabPage1.HorizontalScrollbarBarColor = true;
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.HorizontalScrollbarSize = 3;
+            this.metroTabPage1.HorizontalScrollbarSize = 2;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 41);
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(910, 409);
@@ -135,13 +136,14 @@
             this.metroTabPage1.Text = "Find Rooms";
             this.metroTabPage1.VerticalScrollbarBarColor = true;
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage1.VerticalScrollbarSize = 4;
+            this.metroTabPage1.VerticalScrollbarSize = 3;
             // 
             // metroButton2
             // 
+            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton2.Location = new System.Drawing.Point(145, 303);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(108, 28);
+            this.metroButton2.Size = new System.Drawing.Size(117, 42);
             this.metroButton2.TabIndex = 14;
             this.metroButton2.Text = "Reserve";
             this.metroButton2.UseSelectable = true;
@@ -361,7 +363,7 @@
             this.metroTabPage2.Controls.Add(this.metroLabel6);
             this.metroTabPage2.HorizontalScrollbarBarColor = true;
             this.metroTabPage2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.HorizontalScrollbarSize = 3;
+            this.metroTabPage2.HorizontalScrollbarSize = 2;
             this.metroTabPage2.Location = new System.Drawing.Point(4, 41);
             this.metroTabPage2.Name = "metroTabPage2";
             this.metroTabPage2.Size = new System.Drawing.Size(910, 409);
@@ -369,7 +371,7 @@
             this.metroTabPage2.Text = "Add Guests";
             this.metroTabPage2.VerticalScrollbarBarColor = true;
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage2.VerticalScrollbarSize = 4;
+            this.metroTabPage2.VerticalScrollbarSize = 3;
             // 
             // metroButton3
             // 
@@ -507,7 +509,6 @@
             this.metroTextBox3.MaxLength = 32767;
             this.metroTextBox3.Name = "metroTextBox3";
             this.metroTextBox3.PasswordChar = '\0';
-            this.metroTextBox3.PromptText = "name";
             this.metroTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox3.SelectedText = "";
             this.metroTextBox3.SelectionLength = 0;
@@ -516,7 +517,6 @@
             this.metroTextBox3.Size = new System.Drawing.Size(148, 29);
             this.metroTextBox3.TabIndex = 17;
             this.metroTextBox3.UseSelectable = true;
-            this.metroTextBox3.WaterMark = "name";
             this.metroTextBox3.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox3.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -601,7 +601,7 @@
             this.metroTabPage3.Controls.Add(this.metroLabel13);
             this.metroTabPage3.HorizontalScrollbarBarColor = true;
             this.metroTabPage3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.HorizontalScrollbarSize = 3;
+            this.metroTabPage3.HorizontalScrollbarSize = 2;
             this.metroTabPage3.Location = new System.Drawing.Point(4, 41);
             this.metroTabPage3.Name = "metroTabPage3";
             this.metroTabPage3.Size = new System.Drawing.Size(910, 409);
@@ -609,7 +609,7 @@
             this.metroTabPage3.Text = "Manage Guests";
             this.metroTabPage3.VerticalScrollbarBarColor = true;
             this.metroTabPage3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage3.VerticalScrollbarSize = 4;
+            this.metroTabPage3.VerticalScrollbarSize = 3;
             // 
             // metroComboBox2
             // 
@@ -922,7 +922,7 @@
             // 
             this.metroTabPage4.HorizontalScrollbarBarColor = true;
             this.metroTabPage4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.HorizontalScrollbarSize = 3;
+            this.metroTabPage4.HorizontalScrollbarSize = 2;
             this.metroTabPage4.Location = new System.Drawing.Point(4, 41);
             this.metroTabPage4.Name = "metroTabPage4";
             this.metroTabPage4.Size = new System.Drawing.Size(910, 409);
@@ -930,13 +930,13 @@
             this.metroTabPage4.Text = "Check-In";
             this.metroTabPage4.VerticalScrollbarBarColor = true;
             this.metroTabPage4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage4.VerticalScrollbarSize = 4;
+            this.metroTabPage4.VerticalScrollbarSize = 3;
             // 
             // metroTabPage5
             // 
             this.metroTabPage5.HorizontalScrollbarBarColor = true;
             this.metroTabPage5.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroTabPage5.HorizontalScrollbarSize = 3;
+            this.metroTabPage5.HorizontalScrollbarSize = 2;
             this.metroTabPage5.Location = new System.Drawing.Point(4, 41);
             this.metroTabPage5.Name = "metroTabPage5";
             this.metroTabPage5.Size = new System.Drawing.Size(910, 409);
@@ -944,7 +944,7 @@
             this.metroTabPage5.Text = "Check-Out";
             this.metroTabPage5.VerticalScrollbarBarColor = true;
             this.metroTabPage5.VerticalScrollbarHighlightOnWheel = false;
-            this.metroTabPage5.VerticalScrollbarSize = 4;
+            this.metroTabPage5.VerticalScrollbarSize = 3;
             // 
             // pictureBox1
             // 
@@ -980,6 +980,7 @@
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.metroTabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(950, 480);
             this.Name = "Reception";
@@ -987,7 +988,6 @@
             this.Style = MetroFramework.MetroColorStyle.Red;
             this.Text = "Reception";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
