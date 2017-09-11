@@ -1,0 +1,12 @@
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\bin\Debug\Ambalama HMS with MetroUI.exe.config
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\bin\Debug\Ambalama HMS with MetroUI.exe
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\bin\Debug\Ambalama HMS with MetroUI.pdb
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\bin\Debug\MetroFramework.Design.dll
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\bin\Debug\MetroFramework.dll
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\bin\Debug\MetroFramework.Fonts.dll
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.csprojResolveAssemblyReference.cache
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\obj\Debug\Ambalama_HMS_with_MetroUI.Properties.Resources.resources
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.csproj.GenerateResource.Cache
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.exe
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.pdb
+c:\users\kavindu gayashan\documents\visual studio 2017\Projects\Ambalama HMS with MetroUI\Ambalama HMS with MetroUI\obj\Debug\Ambalama_HMS_with_MetroUI.Reception.resources
