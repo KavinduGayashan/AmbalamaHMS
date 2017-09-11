@@ -17,6 +17,7 @@ namespace Ambalama_HMS_with_MetroUI
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Reception());
+            //checking commit 002
         }
     }
 }
