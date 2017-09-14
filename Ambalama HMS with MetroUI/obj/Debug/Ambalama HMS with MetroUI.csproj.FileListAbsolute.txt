@@ -18,3 +18,4 @@ C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS wit
 C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.csproj.GenerateResource.Cache
 C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.exe
 C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.pdb
+C:\Users\Kavindu Gayashan\Documents\Visual Studio 2017\Projects\Ambalama HMS with MetroUI\AmbalamaHMS\Ambalama HMS with MetroUI\obj\Debug\Ambalama HMS with MetroUI.csprojResolveAssemblyReference.cache

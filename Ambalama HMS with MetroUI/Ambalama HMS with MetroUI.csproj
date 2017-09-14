@@ -42,6 +42,7 @@
       <HintPath>..\..\..\..\..\Desktop\Fox learn\UI Frameworks\MetroModernUI.1.4.0.0\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,6 +55,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DatabaseConnection.cs" />
+    <Compile Include="Guest.cs" />
+    <Compile Include="hotelmgmtsysDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hotelmgmtsysDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reception.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +70,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validations.cs" />
     <EmbeddedResource Include="Reception.resx">
       <DependentUpon>Reception.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +84,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="hotelmgmtsysDataSet.xsc">
+      <DependentUpon>hotelmgmtsysDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hotelmgmtsysDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hotelmgmtsysDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hotelmgmtsysDataSet.xss">
+      <DependentUpon>hotelmgmtsysDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
