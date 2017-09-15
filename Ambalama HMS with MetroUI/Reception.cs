@@ -23,7 +23,7 @@ namespace Ambalama_HMS_with_MetroUI
             DatabaseConnection con = new DatabaseConnection();
             con.ConnectDB(this);
             string sql = "select * from guests";
-            guestsDatagrid.DataSource = con.PrepareTable(sql);
+            guestsDatagrid.DataSource = con.PrepareTable(this,sql);
             con.CloseConnection();
             //*******END OF REFRESHING**********//
         }
@@ -214,8 +214,13 @@ namespace Ambalama_HMS_with_MetroUI
 
         private void Reception_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'hotelmgmtsysDataSet.Guests' table. You can move, or remove it, as needed.
-            this.guestsTableAdapter.Fill(this.hotelmgmtsysDataSet.Guests);
+            // TODO: This line of code loads data into the 'hotelmgmtsysDataSetwithType.Guests' table. You can move, or remove it, as needed.
+            this.guestsTableAdapter.Fill(this.hotelmgmtsysDataSetwithType.Guests);
+            // TODO: This line of code loads data into the 'hotelmgmtsysDataSetwithType.Reservations' table. You can move, or remove it, as needed.
+            this.reservationsTableAdapter.Fill(this.hotelmgmtsysDataSetwithType.Reservations);
+            // TODO: This line of code loads data into the 'hotelmgmtsysDataSetwithType.Rooms' table. You can move, or remove it, as needed.
+            this.roomsTableAdapter.Fill(this.hotelmgmtsysDataSetwithType.Rooms);
+
 
         }
 
@@ -233,25 +238,25 @@ namespace Ambalama_HMS_with_MetroUI
 
                     
 
-                    guestsDatagrid.DataSource = con.PrepareTable(sql);
+                    guestsDatagrid.DataSource = con.PrepareTable(this,sql);
                     con.CloseConnection();
                     break;
                 case 1:
                     sql = "select * from guests where name like '" + searchTxt.Text + "%'";
 
-                    guestsDatagrid.DataSource = con.PrepareTable(sql);
+                    guestsDatagrid.DataSource = con.PrepareTable(this,sql);
                     con.CloseConnection();
                     break;
                 case 2:
                     sql = "select * from guests where phone like '" + searchTxt.Text + "%'";
 
-                    guestsDatagrid.DataSource = con.PrepareTable(sql);
+                    guestsDatagrid.DataSource = con.PrepareTable(this,sql);
                     con.CloseConnection();
                     break;
                 case 3:
                     sql = "select * from guests where city like '" + searchTxt.Text + "%'";
 
-                    guestsDatagrid.DataSource = con.PrepareTable(sql);
+                    guestsDatagrid.DataSource = con.PrepareTable(this,sql);
                     con.CloseConnection();
                     break;
             }
@@ -385,6 +390,27 @@ namespace Ambalama_HMS_with_MetroUI
             }
             else
                 MetroMessageBox.Show(this, "Select an entry in the table before updating.", "Want to update?");
+
+        }
+
+        private void findRoomsBtn_Click(object sender, EventArgs e)
+        {
+
+            //Get selected values for searching
+
+            String cap, ac, dtv, hw,sql;
+
+            cap = roomCapacityCombo.SelectedText;
+            ac = acCheckbox.Checked ? "1" : "1";
+            dtv = tvCheckbox.Checked ? "1" : "1";
+            hw = hotwaterCheckbox.Checked ? "1" : "1";
+
+            sql = "select * from Rooms where capacity>=" + cap + " and ac=" + ac + " and dialogtv=" + dtv + " and hotwater=" + hw;
+
+            DatabaseConnection con = new DatabaseConnection();
+            con.ConnectDB(this);
+
+            findRoomsGrid.DataSource = con.PrepareTable(this,sql);
 
         }
     }

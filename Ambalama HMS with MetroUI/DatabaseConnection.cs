@@ -53,42 +53,51 @@ namespace Ambalama_HMS_with_MetroUI
 
         }
 
-        public Boolean InsertQuery(String sql)
+        //this executes a query given
+        public Boolean InsertQuery(Reception window,String sql)
         {
-            SqlCommand cmd = new SqlCommand(sql, con);
-
-            if (cmd.ExecuteNonQuery() == 1)
+            try
             {
-                return true;
-            }
+                SqlCommand cmd = new SqlCommand(sql, con);
 
+                if (cmd.ExecuteNonQuery() == 1)
+                {
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                MetroMessageBox.Show(window, "Error occured while executing command on the database! \n Error:" + ex.Message, "Oops!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+            }
             return false;
         }
 
 
         //this function returns a DataTable structure for data viewing purposes like datagrid
-        public DataTable PrepareTable(String sql)
+        public DataTable PrepareTable(Reception window,String sql)
         {
-            SqlCommand cmd = new SqlCommand(sql, con);
-            SqlDataAdapter ada = new SqlDataAdapter(cmd);
+            SqlDataAdapter ada=null;
+            SqlCommand cmd=null;
+
+            try
+            {
+                cmd = new SqlCommand(sql, con);
+                ada = new SqlDataAdapter(cmd);
+
+            }
+            catch (Exception ex)
+            {
+                MetroMessageBox.Show(window, "Error getting data from the database! \n Error:" + ex.Message, "Oops!", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
+            }
+
             //filling the datatable with the data in the adapter
             DataTable dt = new DataTable();
             ada.Fill(dt);
-
             return dt;
         }
 
-        public Boolean DeleteQuery(String sql)
-        {
-            SqlCommand cmd = new SqlCommand(sql, con);
 
-            if (cmd.ExecuteNonQuery() == 1)
-            {
-                return true;
-            }
-
-            return false;
-        }
+       
 
     }
 }

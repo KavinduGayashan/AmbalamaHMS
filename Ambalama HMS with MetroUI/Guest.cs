@@ -69,7 +69,7 @@ namespace Ambalama_HMS_with_MetroUI
                 con.ConnectDB(window);
                 string sql = "insert into Guests(GuestID,Name,Phone,Address,City) values ('" + _gid + "','" + _name + "','" + _phone + "','" + _address + "','" + _city + "');";
 
-                if (con.InsertQuery(sql))
+                if (con.InsertQuery(window,sql))
                 {
                     con.CloseConnection();
                     return true;
@@ -93,7 +93,7 @@ namespace Ambalama_HMS_with_MetroUI
                 con.ConnectDB(window);
                 string sql = "update Guests set Name='" + _name + "', Phone='" + _phone + "', Address='" + _address + "', City='" + _city + "' where GuestID='" + _gid + "'";
 
-                if (con.InsertQuery(sql))
+                if (con.InsertQuery(window,sql))
                 {
                     con.CloseConnection();
                     return true;
@@ -117,7 +117,7 @@ namespace Ambalama_HMS_with_MetroUI
                 con.ConnectDB(window);
                 string sql = "delete from guests where guestid='" + _gid + "'";
 
-                if (con.DeleteQuery(sql))
+                if (con.InsertQuery(window,sql))
                 {
                     con.CloseConnection();
                     return true;

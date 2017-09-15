@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Reception));
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
@@ -44,7 +47,7 @@
             this.tvCheckbox = new MetroFramework.Controls.MetroCheckBox();
             this.acCheckbox = new MetroFramework.Controls.MetroCheckBox();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            this.findRoomsGrid = new MetroFramework.Controls.MetroGrid();
             this.checkoutDTPicker = new MetroFramework.Controls.MetroDateTime();
             this.guestIID = new MetroFramework.Controls.MetroTextBox();
             this.roomCapacityCombo = new MetroFramework.Controls.MetroComboBox();
@@ -83,14 +86,6 @@
             this.updateNameValLbl = new MetroFramework.Controls.MetroLabel();
             this.searchCombo = new MetroFramework.Controls.MetroComboBox();
             this.guestsDatagrid = new MetroFramework.Controls.MetroGrid();
-            this.GID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GCity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.guestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hotelmgmtsysDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.hotelmgmtsysDataSet = new Ambalama_HMS_with_MetroUI.hotelmgmtsysDataSet();
             this.DeleteBtn = new MetroFramework.Controls.MetroButton();
             this.UpdateBtn = new MetroFramework.Controls.MetroButton();
             this.guestIDTxt = new MetroFramework.Controls.MetroTextBox();
@@ -108,17 +103,55 @@
             this.metroTabPage5 = new MetroFramework.Controls.MetroTabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.guestsTableAdapter = new Ambalama_HMS_with_MetroUI.hotelmgmtsysDataSetTableAdapters.GuestsTableAdapter();
+            this.reservationsGrid = new MetroFramework.Controls.MetroGrid();
+            this.metroLabel18 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel19 = new MetroFramework.Controls.MetroLabel();
+            this.findRoomsBtn = new MetroFramework.Controls.MetroButton();
+            this.roomTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dialogTVDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.hotWaterDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.aCDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.capacityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hotelmgmtsysDataSetwithType = new Ambalama_HMS_with_MetroUI.hotelmgmtsysDataSetwithType();
+            this.roomsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.roomsTableAdapter = new Ambalama_HMS_with_MetroUI.hotelmgmtsysDataSetwithTypeTableAdapters.RoomsTableAdapter();
+            this.reservationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reservationsTableAdapter = new Ambalama_HMS_with_MetroUI.hotelmgmtsysDataSetwithTypeTableAdapters.ReservationsTableAdapter();
+            this.guestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.guestsTableAdapter = new Ambalama_HMS_with_MetroUI.hotelmgmtsysDataSetwithTypeTableAdapters.GuestsTableAdapter();
+            this.GID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GAddress = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GCity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.resNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.resDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guestIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.roomIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.packageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.resTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noofGuestsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.checkinDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.checkoutDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.advancePaymentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.discountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.latefeeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vehicleNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.resStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.findRoomsGrid)).BeginInit();
             this.metroTabPage2.SuspendLayout();
             this.metroTabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guestsDatagrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelmgmtsysDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelmgmtsysDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservationsGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelmgmtsysDataSetwithType)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -134,7 +167,7 @@
             this.metroTabControl1.Controls.Add(this.metroTabPage5);
             this.metroTabControl1.Location = new System.Drawing.Point(17, 85);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
+            this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(918, 534);
             this.metroTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.metroTabControl1.TabIndex = 0;
@@ -143,13 +176,17 @@
             // 
             // metroTabPage1
             // 
+            this.metroTabPage1.Controls.Add(this.findRoomsBtn);
+            this.metroTabPage1.Controls.Add(this.metroLabel19);
+            this.metroTabPage1.Controls.Add(this.metroLabel18);
+            this.metroTabPage1.Controls.Add(this.reservationsGrid);
             this.metroTabPage1.Controls.Add(this.metroLabel12);
             this.metroTabPage1.Controls.Add(this.metroButton3);
             this.metroTabPage1.Controls.Add(this.hotwaterCheckbox);
             this.metroTabPage1.Controls.Add(this.tvCheckbox);
             this.metroTabPage1.Controls.Add(this.acCheckbox);
             this.metroTabPage1.Controls.Add(this.metroButton2);
-            this.metroTabPage1.Controls.Add(this.metroGrid1);
+            this.metroTabPage1.Controls.Add(this.findRoomsGrid);
             this.metroTabPage1.Controls.Add(this.checkoutDTPicker);
             this.metroTabPage1.Controls.Add(this.guestIID);
             this.metroTabPage1.Controls.Add(this.roomCapacityCombo);
@@ -184,9 +221,9 @@
             // metroButton3
             // 
             this.metroButton3.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton3.Location = new System.Drawing.Point(145, 368);
+            this.metroButton3.Location = new System.Drawing.Point(145, 316);
             this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(159, 42);
+            this.metroButton3.Size = new System.Drawing.Size(200, 42);
             this.metroButton3.TabIndex = 18;
             this.metroButton3.Text = "Check Availability";
             this.metroButton3.UseSelectable = true;
@@ -234,54 +271,64 @@
             this.metroButton2.Text = "Reserve";
             this.metroButton2.UseSelectable = true;
             // 
-            // metroGrid1
+            // findRoomsGrid
             // 
-            this.metroGrid1.AllowUserToAddRows = false;
-            this.metroGrid1.AllowUserToDeleteRows = false;
-            this.metroGrid1.AllowUserToResizeRows = false;
-            this.metroGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.findRoomsGrid.AllowUserToAddRows = false;
+            this.findRoomsGrid.AllowUserToDeleteRows = false;
+            this.findRoomsGrid.AllowUserToResizeRows = false;
+            this.findRoomsGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.metroGrid1.EnableHeadersVisualStyles = false;
-            this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(535, 18);
-            this.metroGrid1.Name = "metroGrid1";
-            this.metroGrid1.ReadOnly = true;
-            this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.metroGrid1.RowTemplate.Height = 24;
-            this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(364, 407);
-            this.metroGrid1.TabIndex = 13;
+            this.findRoomsGrid.AutoGenerateColumns = false;
+            this.findRoomsGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.findRoomsGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.findRoomsGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.findRoomsGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.findRoomsGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.findRoomsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.findRoomsGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.roomIDDataGridViewTextBoxColumn,
+            this.capacityDataGridViewTextBoxColumn,
+            this.aCDataGridViewCheckBoxColumn,
+            this.hotWaterDataGridViewCheckBoxColumn,
+            this.dialogTVDataGridViewCheckBoxColumn,
+            this.statusDataGridViewTextBoxColumn,
+            this.roomTypeDataGridViewTextBoxColumn});
+            this.findRoomsGrid.DataSource = this.roomsBindingSource;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.findRoomsGrid.DefaultCellStyle = dataGridViewCellStyle5;
+            this.findRoomsGrid.EnableHeadersVisualStyles = false;
+            this.findRoomsGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.findRoomsGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.findRoomsGrid.Location = new System.Drawing.Point(535, 18);
+            this.findRoomsGrid.Name = "findRoomsGrid";
+            this.findRoomsGrid.ReadOnly = true;
+            this.findRoomsGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.findRoomsGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.findRoomsGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.findRoomsGrid.RowTemplate.Height = 24;
+            this.findRoomsGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.findRoomsGrid.Size = new System.Drawing.Size(364, 212);
+            this.findRoomsGrid.TabIndex = 13;
             // 
             // checkoutDTPicker
             // 
@@ -312,7 +359,7 @@
             this.guestIID.CustomButton.Visible = false;
             this.guestIID.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.guestIID.Lines = new string[0];
-            this.guestIID.Location = new System.Drawing.Point(145, 316);
+            this.guestIID.Location = new System.Drawing.Point(145, 385);
             this.guestIID.MaxLength = 32767;
             this.guestIID.Name = "guestIID";
             this.guestIID.PasswordChar = '\0';
@@ -339,7 +386,7 @@
             "10"});
             this.roomCapacityCombo.Location = new System.Drawing.Point(145, 22);
             this.roomCapacityCombo.Name = "roomCapacityCombo";
-            this.roomCapacityCombo.Size = new System.Drawing.Size(84, 29);
+            this.roomCapacityCombo.Size = new System.Drawing.Size(85, 29);
             this.roomCapacityCombo.TabIndex = 9;
             this.roomCapacityCombo.UseSelectable = true;
             // 
@@ -370,6 +417,7 @@
             this.roomIDTxt.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.roomIDTxt.CustomButton.UseSelectable = true;
             this.roomIDTxt.CustomButton.Visible = false;
+            this.roomIDTxt.Enabled = false;
             this.roomIDTxt.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.roomIDTxt.Lines = new string[0];
             this.roomIDTxt.Location = new System.Drawing.Point(145, 150);
@@ -390,7 +438,7 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(22, 321);
+            this.metroLabel5.Location = new System.Drawing.Point(22, 391);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(57, 19);
             this.metroLabel5.TabIndex = 6;
@@ -858,14 +906,14 @@
             this.guestsDatagrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.guestsDatagrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.guestsDatagrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guestsDatagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guestsDatagrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.guestsDatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.guestsDatagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.GID,
@@ -874,14 +922,14 @@
             this.GAddress,
             this.GCity});
             this.guestsDatagrid.DataSource = this.guestsBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guestsDatagrid.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guestsDatagrid.DefaultCellStyle = dataGridViewCellStyle8;
             this.guestsDatagrid.EnableHeadersVisualStyles = false;
             this.guestsDatagrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.guestsDatagrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -889,70 +937,20 @@
             this.guestsDatagrid.Name = "guestsDatagrid";
             this.guestsDatagrid.ReadOnly = true;
             this.guestsDatagrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guestsDatagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guestsDatagrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.guestsDatagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.guestsDatagrid.RowTemplate.Height = 24;
             this.guestsDatagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guestsDatagrid.Size = new System.Drawing.Size(411, 405);
             this.guestsDatagrid.TabIndex = 29;
             this.guestsDatagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guestsDatagrid_CellClick);
-            // 
-            // GID
-            // 
-            this.GID.DataPropertyName = "GuestID";
-            this.GID.HeaderText = "GuestID";
-            this.GID.Name = "GID";
-            this.GID.ReadOnly = true;
-            // 
-            // GName
-            // 
-            this.GName.DataPropertyName = "Name";
-            this.GName.HeaderText = "Name";
-            this.GName.Name = "GName";
-            this.GName.ReadOnly = true;
-            // 
-            // GPhone
-            // 
-            this.GPhone.DataPropertyName = "Phone";
-            this.GPhone.HeaderText = "Phone";
-            this.GPhone.Name = "GPhone";
-            this.GPhone.ReadOnly = true;
-            // 
-            // GAddress
-            // 
-            this.GAddress.DataPropertyName = "Address";
-            this.GAddress.HeaderText = "Address";
-            this.GAddress.Name = "GAddress";
-            this.GAddress.ReadOnly = true;
-            // 
-            // GCity
-            // 
-            this.GCity.DataPropertyName = "City";
-            this.GCity.HeaderText = "City";
-            this.GCity.Name = "GCity";
-            this.GCity.ReadOnly = true;
-            // 
-            // guestsBindingSource
-            // 
-            this.guestsBindingSource.DataMember = "Guests";
-            this.guestsBindingSource.DataSource = this.hotelmgmtsysDataSetBindingSource;
-            // 
-            // hotelmgmtsysDataSetBindingSource
-            // 
-            this.hotelmgmtsysDataSetBindingSource.DataSource = this.hotelmgmtsysDataSet;
-            this.hotelmgmtsysDataSetBindingSource.Position = 0;
-            // 
-            // hotelmgmtsysDataSet
-            // 
-            this.hotelmgmtsysDataSet.DataSetName = "hotelmgmtsysDataSet";
-            this.hotelmgmtsysDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // DeleteBtn
             // 
@@ -1256,9 +1254,314 @@
             this.metroButton1.UseCustomBackColor = true;
             this.metroButton1.UseSelectable = true;
             // 
+            // reservationsGrid
+            // 
+            this.reservationsGrid.AllowUserToAddRows = false;
+            this.reservationsGrid.AllowUserToDeleteRows = false;
+            this.reservationsGrid.AllowUserToResizeRows = false;
+            this.reservationsGrid.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.reservationsGrid.AutoGenerateColumns = false;
+            this.reservationsGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.reservationsGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.reservationsGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.reservationsGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.reservationsGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.reservationsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.reservationsGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.resNoDataGridViewTextBoxColumn,
+            this.resDateDataGridViewTextBoxColumn,
+            this.guestIDDataGridViewTextBoxColumn,
+            this.roomIDDataGridViewTextBoxColumn1,
+            this.packageDataGridViewTextBoxColumn,
+            this.resTypeDataGridViewTextBoxColumn,
+            this.noofGuestsDataGridViewTextBoxColumn,
+            this.checkinDataGridViewTextBoxColumn,
+            this.checkoutDataGridViewTextBoxColumn,
+            this.advancePaymentDataGridViewTextBoxColumn,
+            this.discountDataGridViewTextBoxColumn,
+            this.latefeeDataGridViewTextBoxColumn,
+            this.vehicleNoDataGridViewTextBoxColumn,
+            this.resStatusDataGridViewTextBoxColumn});
+            this.reservationsGrid.DataSource = this.reservationsBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.reservationsGrid.DefaultCellStyle = dataGridViewCellStyle2;
+            this.reservationsGrid.EnableHeadersVisualStyles = false;
+            this.reservationsGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.reservationsGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.reservationsGrid.Location = new System.Drawing.Point(537, 268);
+            this.reservationsGrid.Name = "reservationsGrid";
+            this.reservationsGrid.ReadOnly = true;
+            this.reservationsGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.reservationsGrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.reservationsGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.reservationsGrid.RowTemplate.Height = 24;
+            this.reservationsGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.reservationsGrid.Size = new System.Drawing.Size(364, 212);
+            this.reservationsGrid.TabIndex = 20;
+            // 
+            // metroLabel18
+            // 
+            this.metroLabel18.AutoSize = true;
+            this.metroLabel18.Location = new System.Drawing.Point(441, 29);
+            this.metroLabel18.Name = "metroLabel18";
+            this.metroLabel18.Size = new System.Drawing.Size(72, 19);
+            this.metroLabel18.TabIndex = 21;
+            this.metroLabel18.Text = "Rooms List";
+            // 
+            // metroLabel19
+            // 
+            this.metroLabel19.AutoSize = true;
+            this.metroLabel19.Location = new System.Drawing.Point(441, 281);
+            this.metroLabel19.Name = "metroLabel19";
+            this.metroLabel19.Size = new System.Drawing.Size(82, 19);
+            this.metroLabel19.TabIndex = 22;
+            this.metroLabel19.Text = "Reservations";
+            // 
+            // findRoomsBtn
+            // 
+            this.findRoomsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.findRoomsBtn.Location = new System.Drawing.Point(300, 114);
+            this.findRoomsBtn.Name = "findRoomsBtn";
+            this.findRoomsBtn.Size = new System.Drawing.Size(90, 30);
+            this.findRoomsBtn.TabIndex = 23;
+            this.findRoomsBtn.Text = "Find Rooms";
+            this.findRoomsBtn.UseSelectable = true;
+            this.findRoomsBtn.Click += new System.EventHandler(this.findRoomsBtn_Click);
+            // 
+            // roomTypeDataGridViewTextBoxColumn
+            // 
+            this.roomTypeDataGridViewTextBoxColumn.DataPropertyName = "RoomType";
+            this.roomTypeDataGridViewTextBoxColumn.HeaderText = "Room Type";
+            this.roomTypeDataGridViewTextBoxColumn.Name = "roomTypeDataGridViewTextBoxColumn";
+            this.roomTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dialogTVDataGridViewCheckBoxColumn
+            // 
+            this.dialogTVDataGridViewCheckBoxColumn.DataPropertyName = "DialogTV";
+            this.dialogTVDataGridViewCheckBoxColumn.HeaderText = "DialogTV";
+            this.dialogTVDataGridViewCheckBoxColumn.Name = "dialogTVDataGridViewCheckBoxColumn";
+            this.dialogTVDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // hotWaterDataGridViewCheckBoxColumn
+            // 
+            this.hotWaterDataGridViewCheckBoxColumn.DataPropertyName = "HotWater";
+            this.hotWaterDataGridViewCheckBoxColumn.HeaderText = "Hot Water";
+            this.hotWaterDataGridViewCheckBoxColumn.Name = "hotWaterDataGridViewCheckBoxColumn";
+            this.hotWaterDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // aCDataGridViewCheckBoxColumn
+            // 
+            this.aCDataGridViewCheckBoxColumn.DataPropertyName = "AC";
+            this.aCDataGridViewCheckBoxColumn.HeaderText = "AC";
+            this.aCDataGridViewCheckBoxColumn.Name = "aCDataGridViewCheckBoxColumn";
+            this.aCDataGridViewCheckBoxColumn.ReadOnly = true;
+            // 
+            // capacityDataGridViewTextBoxColumn
+            // 
+            this.capacityDataGridViewTextBoxColumn.DataPropertyName = "Capacity";
+            this.capacityDataGridViewTextBoxColumn.HeaderText = "Capacity";
+            this.capacityDataGridViewTextBoxColumn.Name = "capacityDataGridViewTextBoxColumn";
+            this.capacityDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // roomIDDataGridViewTextBoxColumn
+            // 
+            this.roomIDDataGridViewTextBoxColumn.DataPropertyName = "RoomID";
+            this.roomIDDataGridViewTextBoxColumn.HeaderText = "Room ID";
+            this.roomIDDataGridViewTextBoxColumn.Name = "roomIDDataGridViewTextBoxColumn";
+            this.roomIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hotelmgmtsysDataSetwithType
+            // 
+            this.hotelmgmtsysDataSetwithType.DataSetName = "hotelmgmtsysDataSetwithType";
+            this.hotelmgmtsysDataSetwithType.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // roomsBindingSource
+            // 
+            this.roomsBindingSource.DataMember = "Rooms";
+            this.roomsBindingSource.DataSource = this.hotelmgmtsysDataSetwithType;
+            // 
+            // roomsTableAdapter
+            // 
+            this.roomsTableAdapter.ClearBeforeFill = true;
+            // 
+            // reservationsBindingSource
+            // 
+            this.reservationsBindingSource.DataMember = "Reservations";
+            this.reservationsBindingSource.DataSource = this.hotelmgmtsysDataSetwithType;
+            // 
+            // reservationsTableAdapter
+            // 
+            this.reservationsTableAdapter.ClearBeforeFill = true;
+            // 
+            // guestsBindingSource
+            // 
+            this.guestsBindingSource.DataMember = "Guests";
+            this.guestsBindingSource.DataSource = this.hotelmgmtsysDataSetwithType;
+            // 
             // guestsTableAdapter
             // 
             this.guestsTableAdapter.ClearBeforeFill = true;
+            // 
+            // GID
+            // 
+            this.GID.DataPropertyName = "GuestID";
+            this.GID.HeaderText = "GuestID";
+            this.GID.Name = "GID";
+            this.GID.ReadOnly = true;
+            // 
+            // GName
+            // 
+            this.GName.DataPropertyName = "Name";
+            this.GName.HeaderText = "Name";
+            this.GName.Name = "GName";
+            this.GName.ReadOnly = true;
+            // 
+            // GPhone
+            // 
+            this.GPhone.DataPropertyName = "Phone";
+            this.GPhone.HeaderText = "Phone";
+            this.GPhone.Name = "GPhone";
+            this.GPhone.ReadOnly = true;
+            // 
+            // GAddress
+            // 
+            this.GAddress.DataPropertyName = "Address";
+            this.GAddress.HeaderText = "Address";
+            this.GAddress.Name = "GAddress";
+            this.GAddress.ReadOnly = true;
+            // 
+            // GCity
+            // 
+            this.GCity.DataPropertyName = "City";
+            this.GCity.HeaderText = "City";
+            this.GCity.Name = "GCity";
+            this.GCity.ReadOnly = true;
+            // 
+            // resNoDataGridViewTextBoxColumn
+            // 
+            this.resNoDataGridViewTextBoxColumn.DataPropertyName = "ResNo";
+            this.resNoDataGridViewTextBoxColumn.HeaderText = "Res. No";
+            this.resNoDataGridViewTextBoxColumn.Name = "resNoDataGridViewTextBoxColumn";
+            this.resNoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // resDateDataGridViewTextBoxColumn
+            // 
+            this.resDateDataGridViewTextBoxColumn.DataPropertyName = "ResDate";
+            this.resDateDataGridViewTextBoxColumn.HeaderText = "Res. Date";
+            this.resDateDataGridViewTextBoxColumn.Name = "resDateDataGridViewTextBoxColumn";
+            this.resDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // guestIDDataGridViewTextBoxColumn
+            // 
+            this.guestIDDataGridViewTextBoxColumn.DataPropertyName = "guestID";
+            this.guestIDDataGridViewTextBoxColumn.HeaderText = "Guest ID";
+            this.guestIDDataGridViewTextBoxColumn.Name = "guestIDDataGridViewTextBoxColumn";
+            this.guestIDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // roomIDDataGridViewTextBoxColumn1
+            // 
+            this.roomIDDataGridViewTextBoxColumn1.DataPropertyName = "roomID";
+            this.roomIDDataGridViewTextBoxColumn1.HeaderText = "Room ID";
+            this.roomIDDataGridViewTextBoxColumn1.Name = "roomIDDataGridViewTextBoxColumn1";
+            this.roomIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // packageDataGridViewTextBoxColumn
+            // 
+            this.packageDataGridViewTextBoxColumn.DataPropertyName = "package";
+            this.packageDataGridViewTextBoxColumn.HeaderText = "Package";
+            this.packageDataGridViewTextBoxColumn.Name = "packageDataGridViewTextBoxColumn";
+            this.packageDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // resTypeDataGridViewTextBoxColumn
+            // 
+            this.resTypeDataGridViewTextBoxColumn.DataPropertyName = "resType";
+            this.resTypeDataGridViewTextBoxColumn.HeaderText = "Res. Type";
+            this.resTypeDataGridViewTextBoxColumn.Name = "resTypeDataGridViewTextBoxColumn";
+            this.resTypeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // noofGuestsDataGridViewTextBoxColumn
+            // 
+            this.noofGuestsDataGridViewTextBoxColumn.DataPropertyName = "noofGuests";
+            this.noofGuestsDataGridViewTextBoxColumn.HeaderText = "No. of Guests";
+            this.noofGuestsDataGridViewTextBoxColumn.Name = "noofGuestsDataGridViewTextBoxColumn";
+            this.noofGuestsDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // checkinDataGridViewTextBoxColumn
+            // 
+            this.checkinDataGridViewTextBoxColumn.DataPropertyName = "checkin";
+            this.checkinDataGridViewTextBoxColumn.HeaderText = "Check In";
+            this.checkinDataGridViewTextBoxColumn.Name = "checkinDataGridViewTextBoxColumn";
+            this.checkinDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // checkoutDataGridViewTextBoxColumn
+            // 
+            this.checkoutDataGridViewTextBoxColumn.DataPropertyName = "checkout";
+            this.checkoutDataGridViewTextBoxColumn.HeaderText = "Check Out";
+            this.checkoutDataGridViewTextBoxColumn.Name = "checkoutDataGridViewTextBoxColumn";
+            this.checkoutDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // advancePaymentDataGridViewTextBoxColumn
+            // 
+            this.advancePaymentDataGridViewTextBoxColumn.DataPropertyName = "advancePayment";
+            this.advancePaymentDataGridViewTextBoxColumn.HeaderText = "Advance Payment";
+            this.advancePaymentDataGridViewTextBoxColumn.Name = "advancePaymentDataGridViewTextBoxColumn";
+            this.advancePaymentDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // discountDataGridViewTextBoxColumn
+            // 
+            this.discountDataGridViewTextBoxColumn.DataPropertyName = "discount";
+            this.discountDataGridViewTextBoxColumn.HeaderText = "Discount";
+            this.discountDataGridViewTextBoxColumn.Name = "discountDataGridViewTextBoxColumn";
+            this.discountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // latefeeDataGridViewTextBoxColumn
+            // 
+            this.latefeeDataGridViewTextBoxColumn.DataPropertyName = "latefee";
+            this.latefeeDataGridViewTextBoxColumn.HeaderText = "Late Fee";
+            this.latefeeDataGridViewTextBoxColumn.Name = "latefeeDataGridViewTextBoxColumn";
+            this.latefeeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // vehicleNoDataGridViewTextBoxColumn
+            // 
+            this.vehicleNoDataGridViewTextBoxColumn.DataPropertyName = "vehicleNo";
+            this.vehicleNoDataGridViewTextBoxColumn.HeaderText = "Vehicle No";
+            this.vehicleNoDataGridViewTextBoxColumn.Name = "vehicleNoDataGridViewTextBoxColumn";
+            this.vehicleNoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // resStatusDataGridViewTextBoxColumn
+            // 
+            this.resStatusDataGridViewTextBoxColumn.DataPropertyName = "ResStatus";
+            this.resStatusDataGridViewTextBoxColumn.HeaderText = "Res. Status";
+            this.resStatusDataGridViewTextBoxColumn.Name = "resStatusDataGridViewTextBoxColumn";
+            this.resStatusDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Reception
             // 
@@ -1271,7 +1574,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(950, 480);
+            this.MinimumSize = new System.Drawing.Size(950, 630);
             this.Name = "Reception";
             this.Padding = new System.Windows.Forms.Padding(25, 82, 25, 28);
             this.Style = MetroFramework.MetroColorStyle.Red;
@@ -1281,16 +1584,18 @@
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.metroTabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.findRoomsGrid)).EndInit();
             this.metroTabPage2.ResumeLayout(false);
             this.metroTabPage2.PerformLayout();
             this.metroTabPage3.ResumeLayout(false);
             this.metroTabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guestsDatagrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelmgmtsysDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hotelmgmtsysDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservationsGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hotelmgmtsysDataSetwithType)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.roomsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reservationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guestsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1313,7 +1618,7 @@
         private MetroFramework.Controls.MetroDateTime checkinDTPicker;
         private MetroFramework.Controls.MetroComboBox roomCapacityCombo;
         private MetroFramework.Controls.MetroTextBox guestIID;
-        private MetroFramework.Controls.MetroGrid metroGrid1;
+        private MetroFramework.Controls.MetroGrid findRoomsGrid;
         private MetroFramework.Controls.MetroDateTime checkoutDTPicker;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroLabel metroLabel11;
@@ -1352,24 +1657,52 @@
         private MetroFramework.Controls.MetroLabel nameValLbl;
         private MetroFramework.Controls.MetroLabel registeredLbl;
         private MetroFramework.Controls.MetroButton clearBtn;
-        private System.Windows.Forms.BindingSource hotelmgmtsysDataSetBindingSource;
-        private hotelmgmtsysDataSet hotelmgmtsysDataSet;
-        private System.Windows.Forms.BindingSource guestsBindingSource;
-        private hotelmgmtsysDataSetTableAdapters.GuestsTableAdapter guestsTableAdapter;
         private MetroFramework.Controls.MetroLabel updatePhoneValLbl;
         private MetroFramework.Controls.MetroLabel updateCityValLbl;
         private MetroFramework.Controls.MetroLabel updateAddrValLbl;
         private MetroFramework.Controls.MetroLabel updateNameValLbl;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GPhone;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GAddress;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GCity;
         private MetroFramework.Controls.MetroCheckBox hotwaterCheckbox;
         private MetroFramework.Controls.MetroCheckBox tvCheckbox;
         private MetroFramework.Controls.MetroCheckBox acCheckbox;
         private MetroFramework.Controls.MetroLabel metroLabel12;
         private MetroFramework.Controls.MetroButton metroButton3;
+        private MetroFramework.Controls.MetroButton findRoomsBtn;
+        private MetroFramework.Controls.MetroLabel metroLabel19;
+        private MetroFramework.Controls.MetroLabel metroLabel18;
+        private MetroFramework.Controls.MetroGrid reservationsGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn capacityDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn aCDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn hotWaterDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dialogTVDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomTypeDataGridViewTextBoxColumn;
+        private hotelmgmtsysDataSetwithType hotelmgmtsysDataSetwithType;
+        private System.Windows.Forms.BindingSource roomsBindingSource;
+        private hotelmgmtsysDataSetwithTypeTableAdapters.RoomsTableAdapter roomsTableAdapter;
+        private System.Windows.Forms.BindingSource reservationsBindingSource;
+        private hotelmgmtsysDataSetwithTypeTableAdapters.ReservationsTableAdapter reservationsTableAdapter;
+        private System.Windows.Forms.BindingSource guestsBindingSource;
+        private hotelmgmtsysDataSetwithTypeTableAdapters.GuestsTableAdapter guestsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GPhone;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GAddress;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GCity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn resNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn resDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn guestIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn roomIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn packageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn resTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn noofGuestsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn checkinDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn checkoutDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn advancePaymentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn discountDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn latefeeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vehicleNoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn resStatusDataGridViewTextBoxColumn;
     }
 }
 

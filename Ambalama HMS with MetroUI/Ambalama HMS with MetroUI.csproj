@@ -62,6 +62,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>hotelmgmtsysDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="hotelmgmtsysDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hotelmgmtsysDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="hotelmgmtsysDataSetwithType.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hotelmgmtsysDataSetwithType.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reception.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +104,28 @@
     </None>
     <None Include="hotelmgmtsysDataSet.xss">
       <DependentUpon>hotelmgmtsysDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hotelmgmtsysDataSet1.xsc">
+      <DependentUpon>hotelmgmtsysDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="hotelmgmtsysDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hotelmgmtsysDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hotelmgmtsysDataSet1.xss">
+      <DependentUpon>hotelmgmtsysDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="hotelmgmtsysDataSetwithType.xsc">
+      <DependentUpon>hotelmgmtsysDataSetwithType.xsd</DependentUpon>
+    </None>
+    <None Include="hotelmgmtsysDataSetwithType.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hotelmgmtsysDataSetwithType.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hotelmgmtsysDataSetwithType.xss">
+      <DependentUpon>hotelmgmtsysDataSetwithType.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
