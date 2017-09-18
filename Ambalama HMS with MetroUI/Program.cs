@@ -14,9 +14,10 @@ namespace Ambalama_HMS_with_MetroUI
         [STAThread]
         static void Main()
         {
+            //new Reception()
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Reception());
+            Application.Run(new Login());
             //checking commit 002
         }
     }
